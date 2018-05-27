@@ -2,6 +2,8 @@
 
 var gulp = require('gulp');
 var plugin = require('gulp-load-plugins')();
+var jsmin = require('gulp-jsmin');
+var rename = require('gulp-rename');
 var path = require('path');
 
 var AUTOPREFIXER_BROWSERS = [
@@ -30,6 +32,13 @@ gulp.task('jshint', function () {
     .pipe(plugin.jshint.reporter('jshint-stylish'));
 });
 
+// js min
+gulp.task('jsmin', function () {
+    gulp.src('assets/scripts/main.js')
+        .pipe(jsmin())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('assets/scripts'));
+});
 
 // copilando o less e adicionando os prefix
 gulp.task('sass', function () {
@@ -37,6 +46,7 @@ gulp.task('sass', function () {
     .pipe(plugin.sass().on('error', plugin.sass.logError))
     .pipe(plugin.autoprefixer(AUTOPREFIXER_BROWSERS))
     .pipe(plugin.csso())
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('assets/styles'));
 });
 
@@ -47,7 +57,7 @@ gulp.task('watch', function() {
     ], ['sass']);
     gulp.watch([
         "assets/scripts/**/*.js",
-    ], ['jshint'])
+    ], ['jshint', 'jsmin'])
 });
 
 // Task padrão, exibe o menu de tasks

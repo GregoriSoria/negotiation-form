@@ -10,9 +10,7 @@ var page = {
 	},
 
 	clickTitulo: function() {
-		document.querySelector('h1').addEventListener('click', function() {
-			alert('clicou no título');
-		});
+		
 	},
 };
 
