@@ -42,10 +42,6 @@ input::-webkit-inner-spin-button {
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
-.was-validated input:invalid {
-  border: solid 1px #dc3545;
-}
-
 .underline {
   text-decoration: underline;
 }
