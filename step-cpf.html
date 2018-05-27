@@ -1,13 +1,13 @@
-<html>
+<html lang="pt-br">
     <head>
-        <title>Start</title>
+        <title>Validate CPF</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="stylesheet" type="text/css" href="assets/styles/main.min.css">
     </head>
     <body>
         <div class="container">
-            <div class="main" data-step="start">
+            <div class="main" data-step="cpf">
                 <header>
                     <img src="assets/images/marisa.png" class="logo">
                 </header>
@@ -20,40 +20,22 @@
                         Aproveite esta oportunidade para regularizar seu débito.
                     </p>
 
-                    <h4><b>Escolha uma das opções abaixo:</b></h4>
+                    <h4><b>Confirmação de dados</b></h4>
 
-                    <ul class="negotioation-options">
-                        <li>
-                            <a href="step-cpf.html">
-                                <img src="assets/images/whatsapp.png">
-                                <span class="content"><b>Whatsapp</b></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="step-cpf.html">
-                                <img src="assets/images/chat.png">
-                                <span class="content"><b>Chat</b></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="step-cpf.html">
-                                <img src="assets/images/email.png">
-                                <span class="content"><b>E-mail</b></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="step-cpf.html">
-                                <img src="assets/images/phone.png">
-                                <span class="content"><b>Telefone</b></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="step-cpf.html">
-                                <img src="assets/images/next.png">
-                                <span class="content"><b>Negocie agora</b></span>
-                            </a>
-                        </li>
-                    </ul>
+                    <p>
+                        Para verificar as condições de pagamento, confirme seus dados abaixo:
+                    </p>
+
+                    <form name="validateCpf" action="step-payment.html" class="row col-sm-4">
+                        <div class="form-group">
+                            <label for="cpf">3 primeiros dígitos do seu CPF:</label>
+                            <input type="number" name="cpf" class="form-control" required minlength="3" maxlength="3" min="100" max="999">
+                        </div>
+                        <div class="buttons">
+                            <input type="submit" class="btn btn-primary col-md-4 col-sm-6 col-xs-12" value="PRÓXIMO">
+                        </div>
+                    </form>
+                    <div class="clear-both"></div>
                 </section>
                 <footer>
                     <div class="obs col-md-12">

@@ -30,3 +30,22 @@ body h4 {
 b {
 	color: #303030;
 }
+
+.btn {
+  transition: all 0.2s ease-in-out;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.was-validated input:invalid {
+  border: solid 1px #dc3545;
+}
+
+.underline {
+  text-decoration: underline;
+}
