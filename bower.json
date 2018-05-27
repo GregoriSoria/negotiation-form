@@ -1,0 +1,20 @@
+{
+  "name": "negotiation-form",
+  "authors": [
+    "Grégori Sória"
+  ],
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  },
+  "description": "a simple boilerplate",
+  "keywords": [
+    "boilerplate",
+    "sass",
+    "gulp",
+    "jquery",
+    "bower",
+    "greg"
+  ],
+  "license": "MIT"
+}
