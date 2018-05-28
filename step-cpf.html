@@ -11,37 +11,39 @@
                 <header>
                     <img src="assets/images/marisa.png" class="logo">
                 </header>
-                <section class="content col-md-12">
-                    <h4><b>Negociação da Dívida</b></h4>
-                    <p>
-                        Prezado(a) Senhor(a) <span id="username">Jonatas</span>,
-                    </p>
-                    <p>
-                        Aproveite esta oportunidade para regularizar seu débito.
-                    </p>
+                <section class="content">
+                    <div class="block col-md-12">
+                        <h4><b>Negociação da Dívida</b></h4>
+                        <p>
+                            Prezado(a) Senhor(a) <span id="username">Jonatas</span>,
+                        </p>
+                        <p>
+                            Aproveite esta oportunidade para regularizar seu débito.
+                        </p>
 
-                    <h4><b>Confirmação de dados</b></h4>
+                        <h4><b>Confirmação de dados</b></h4>
 
-                    <p>
-                        Para verificar as condições de pagamento, confirme seus dados abaixo:
-                    </p>
+                        <p>
+                            Para verificar as condições de pagamento, confirme seus dados abaixo:
+                        </p>
 
-                    <form name="validateCpf" action="step-payment.html" class="row col-sm-4">
-                        <div class="form-group">
-                            <label for="cpf">3 primeiros dígitos do seu CPF:</label>
-                            <input type="tel" name="cpf" autofocus class="form-control" pattern=".{3,3}" required minlength="3" maxlength="3">
-                        </div>
-                        <div class="buttons">
-                            <input type="submit" class="btn btn-primary col-md-4 col-sm-6 col-xs-12" value="PRÓXIMO">
-                        </div>
-                    </form>
-                    <div class="clear-both"></div>
-                </section>
-                <footer>
+                        <form name="validateCpf" action="step-payment.html" class="row col-sm-4">
+                            <div class="form-group">
+                                <label for="cpf">3 primeiros dígitos do seu CPF:</label>
+                                <input type="tel" name="cpf" autofocus class="form-control" pattern=".{3,3}" required minlength="3" maxlength="3">
+                            </div>
+                            <div class="buttons">
+                                <input type="submit" class="btn btn-primary col-md-4 col-sm-6 col-xs-12" value="PRÓXIMO">
+                            </div>
+                        </form>
+                        <div class="clear-both"></div>
+                    </div>
                     <div class="obs col-md-12">
                         <p><a href="#">Não sou a pessoa</a></p>
                         <p>Selecione esta opção caso não seja a pessoa indicada na mensagem</p>
                     </div>
+                </section>
+                <footer>
                     <div class="content col-md-12">
                         <p>
                             Central de Atendimento<br>

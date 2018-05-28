@@ -11,52 +11,54 @@
                 <header>
                     <img src="assets/images/marisa.png" class="logo">
                 </header>
-                <section class="content col-md-12">
-                    <h4><b>Detalhes da Dívida</b></h4>
-                    
-                    <div class="form-group">
-                        <label for="">Contrato:</label>
-                        <span>0097377000152</span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="">Produto:</label>
-                        <span>Carne</span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="">Valor:</label>
-                        <span>R$ 282.11</span>
-                    </div>
-
-                    <h4><b>Opções de Pagamento</b></h4>
-
-                    <form name="paymenForm" action="step-confirm.html" class="row col-sm-5">
+                <section class="content">
+                    <div class="block col-md-12">
+                        <h4><b>Detalhes da Dívida</b></h4>
+                        
                         <div class="form-group">
-                            <div class="form-group">
-                                <input type="radio" required class="form-check-input" name="paymentType" id="cash" value="cash">
-                                <label class="form-check-label" for="cash">A vista: R$ 230,28</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="radio" class="form-check-input" name="paymentType" id="entryof" value="entryof">
-                                <label class="form-check-label" for="entryof">Entrada de R$ 117,44 + 10x R$ 117,44</label>
-                            </div>
+                            <label for="">Contrato:</label>
+                            <span>0097377000152</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="">Produto:</label>
+                            <span>Carne</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="">Valor:</label>
+                            <span>R$ 282.11</span>
                         </div>
 
-                        <div class="form-group">
-                            <label for="email">E-mail para recebimento do boleto:</label>
-                            <input type="email" name="email" class="form-control" required max="100" value="jonatasfazenda@gmail.com">
-                        </div>
-                        <div class="buttons">
-                            <input type="submit" class="btn btn-primary col-md-4 col-sm-6 col-xs-12" value="PRÓXIMO">
-                        </div>
-                    </form>
-                    <div class="clear-both"></div>
-                </section>
-                <footer>
+                        <h4><b>Opções de Pagamento</b></h4>
+
+                        <form name="paymenForm" action="step-confirm.html" class="row col-sm-5">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <input type="radio" required class="form-check-input" name="paymentType" id="cash" value="cash">
+                                    <label class="form-check-label" for="cash">A vista: R$ 230,28</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" class="form-check-input" name="paymentType" id="entryof" value="entryof">
+                                    <label class="form-check-label" for="entryof">Entrada de R$ 117,44 + 10x R$ 117,44</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mail para recebimento do boleto:</label>
+                                <input type="email" name="email" class="form-control" required max="100" value="jonatasfazenda@gmail.com">
+                            </div>
+                            <div class="buttons">
+                                <input type="submit" class="btn btn-primary col-md-4 col-sm-6 col-xs-12" value="PRÓXIMO">
+                            </div>
+                        </form>
+                        <div class="clear-both"></div>
+                    </div>
                     <div class="obs col-md-12">
                         <p>Proposta válida até <span class="limit-date">29/03/2018</span></p>
                     </div>
+                </section>
+                <footer>
                     <div class="content col-md-12">
                         <p>
                             Central de Atendimento<br>
