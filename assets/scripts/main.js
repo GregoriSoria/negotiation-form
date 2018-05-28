@@ -97,7 +97,7 @@ var pageConfirm = {
 	},
 
 	backButton: function() {
-		var buttons = document.querySelectorAll('button.back');
+		var buttons = document.querySelectorAll('.btn.back');
 		for (var i = 0; i < buttons.length; i++) {
 			buttons[i].addEventListener('click', function(e) {
 				e.preventDefault();
